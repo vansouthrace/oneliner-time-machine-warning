@@ -1,6 +1,10 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY = "WARNING: do not visit your past self. He is insufferable, he knows it, and he will ask for the lottery numbers.";
+// Warning label for a time machine, for the
+// "Funniest Time Machine Warning Label" bounty on make.fun.
+const entry =
+  "WARNING: Do not meet yourself. He will ask to borrow money, and technically, you already owe it to him.";
 
-mkdirSync('/output', { recursive: true });
-writeFileSync('/output/entry.txt', ENTRY);
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", entry);
+console.log(entry);
